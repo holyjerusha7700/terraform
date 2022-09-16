@@ -80,7 +80,7 @@ variable "identifier" {
 
 variable "storage" {
   default     = "10"
-  description = "Storage size in GB"
+  description = "20 GB"
 }
 
 variable "engine" {
@@ -92,7 +92,7 @@ variable "engine_version" {
   description = "Engine version"
 
   default = {
-    mysql    = "5.7.21"
+    mysql    = "8.0.27"
   }
 }
 
@@ -107,13 +107,13 @@ variable "db_name" {
 }
 
 variable "username" {
-  default     = "sekhar"
+  default     = "jerusha"
   description = "User name"
 }
 
 variable "password" {
   description = "password, provide through your ENV variables"
-  default = "sekharl1234"
+  default = ""
 }
 variable "subnet_1_cidr" {
   default     = "172.31.48.0/20"
